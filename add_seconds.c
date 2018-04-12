@@ -8,7 +8,7 @@
 // Class: CSCI 223F | TR 4:30PM
 // Description:
 //  This program is an exercise in structures.  The user is prompted to enter a
-//  start time in HH::MM:SS format, and also for the number of seconds to add to
+//  start time in HH:MM:SS format, and also for the number of seconds to add to
 //  the start time.  If all input values are legitimate, a loop is entered that
 //  adds a second to the time and displays it, handling all rollovers values.
 // ============================================================================
@@ -157,7 +157,7 @@ void    AddOneSecond(struct Time  *timePtr)
 
 int     GetUserTime(struct Time  *timePtr)
 {
-    if(1 != scanf("%02d:%02d:%02d", &timePtr -> hours, &timePtr -> mins, &timePtr -> secs))
+    if(1 == scanf("%02d:%02d:%02d", &timePtr -> hours, &timePtr -> mins, &timePtr -> secs))
     {
         return FALSE;
     }
